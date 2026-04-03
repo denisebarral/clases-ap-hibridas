@@ -1,0 +1,26 @@
+{
+  "name": "clases-ap-hibridas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisebarral/clases-ap-hibridas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/denisebarral/clases-ap-hibridas/issues"
+  },
+  "homepage": "https://github.com/denisebarral/clases-ap-hibridas#readme",
+  "devDependencies": {
+    "nodemon": "3.1.14"
+  }
+}
