@@ -65,6 +65,21 @@ const server = createServer((request, response) => {
         case "/productos.html":
             readFile("./public/productos.html", (err, data) => {
                 if (err) response.write(createPage("No se pudo leer el archivo."))
+                let tabla = `<table class="table table-striped table-bordered mt-3">
+                    <thead class="table-dark">
+                        <tr><th>#</th><th>Nombre</th><th>Precio</th></tr>
+                    </thead>
+                    <tbody>
+                        ${ cafes.map(cafe => `<tr><td>${cafe.id}</td><td>${cafe.nombre}</td><td>$${cafe.precio}</td></tr>`).join("") }
+                    </tbody>
+                </table>`
+                response.write(data.toString().replace("<!-- TABLA_PRODUCTOS -->", tabla))
+                response.end()
+            })
+            break
+        case "/quienes-somos.html":
+            readFile("./public/quienes-somos.html", (err, data) => {
+                if (err) response.write(createPage("No se pudo leer el archivo."))
                 response.write(data)
                 response.end()
             })
