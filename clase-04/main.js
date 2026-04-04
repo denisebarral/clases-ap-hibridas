@@ -33,4 +33,5 @@ app.post("/mensaje", (req, res) => {
 
 
 //6- Escucho en el puerto 2026 y muestro un mensaje en la consola cuando el servidor esté funcionando.
+//listen() es un método de Express que se utiliza para iniciar el servidor y hacer que escuche en un puerto específico. En este caso, le indicamos que escuche en el puerto 2026. El segundo argumento es una función de callback que se ejecuta cuando el servidor ha comenzado a escuchar en el puerto especificado. En este caso, simplemente mostramos un mensaje en la consola indicando que el servidor está funcionando y proporcionando la URL para acceder a él (http://localhost:2026).
 app.listen(2026, () => console.log('Servidor funcionando en http://localhost:2026'));
