@@ -34,8 +34,8 @@ import { constants } from "fs"
  *  - En productSave()   → el access() lanza error y lo captura el catch del try/catch.
  * Cuando quieras que funcione de verdad, cambiá el nombre a "productos.json".
  */
-const archivo = "./data/productossssssssssss.json"
-
+const archivo = "./data/productos.json"
+//const archivo = "./data/productossssssssssss.json"
 
 
 /**
