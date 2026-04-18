@@ -1,0 +1,30 @@
+const cafes = [
+    {
+        id: 1,
+        nombre: "Café Expreso",
+        precio: 123
+    },
+    {
+        id: 2,
+        nombre: "Café Americano",
+        precio: 123
+    },
+    {
+        id: 3,
+        nombre: "Café Cortado",
+        precio: 123
+    },
+    {
+        id: 4,
+        nombre: "Café Doble",
+        precio: 123
+    },
+    {
+        id: 5,
+        nombre: "Café Lagrima",
+        precio: 123
+    }
+]
+
+// module.exports = cafes
+export default cafes

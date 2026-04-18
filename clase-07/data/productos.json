@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "nombre": "Café Expreso",
+        "precio": 123
+    },
+    {
+        "id": 2,
+        "nombre": "Café Americano",
+        "precio": "1234"
+    },
+    {
+        "id": 3,
+        "nombre": "Café Cortado",
+        "precio": 123
+    },
+    {
+        "id": 4,
+        "nombre": "Café Doble",
+        "precio": "12355"
+    },
+    {
+        "id": 5,
+        "nombre": "Café Lagrima",
+        "precio": "1235"
+    },
+    {
+        "nombre": "Café Polonia",
+        "id": 6,
+        "precio": 28799
+    },
+    {
+        "nombre": "Café Tera",
+        "id": 7,
+        "precio": 2500
+    },
+    {
+        "nombre": "Café De Crsitina",
+        "precio": 3666,
+        "id": 8
+    },
+    {
+        "nombre": "Café De autor",
+        "precio": 29,
+        "id": 9
+    }
+]
