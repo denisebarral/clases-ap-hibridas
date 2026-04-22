@@ -25,6 +25,7 @@ En concreto:
 - Se conectó la app a **MongoDB Atlas** (base de datos en la nube).
 - Se usa **MongoDB Compass** como cliente visual para inspeccionar los datos.
 - Todos los métodos del servicio (`getProductos`, `getProductosById`, `productSave`, `editProduct`, `deleteProduct`) fueron reescritos para operar contra la colección `cafes` de la base de datos `cafeapp`.
+- Se eliminó la carpeta `data/` (con `productos.json` y `productos.js`) ya que la persistencia ahora la maneja MongoDB y esos archivos quedaron completamente en desuso.
 
 ---
 
