@@ -1,0 +1,37 @@
+/*
+  index.css — Estilos globales de la aplicación.
+
+  En Tailwind v4, esta línea importa TODO: las utilidades, los componentes,
+  los resets base. Es el reemplazo de los @tailwind base/components/utilities
+  que se usaban en Tailwind v3.
+
+  No es necesario un archivo tailwind.config.js con v4 + Vite:
+  el plugin @tailwindcss/vite escanea automáticamente los archivos .jsx/.js
+  y genera solo las clases que realmente se usan.
+*/
+@import "tailwindcss";
+
+/*
+  Animación personalizada para el panel de detalle.
+  Cuando aparece UserDetail, se desliza suavemente desde arriba
+  en lugar de aparecer de golpe, mejorando la UX.
+
+  @keyframes define los "fotogramas clave" de la animación:
+    - from: estado inicial (un poco arriba y transparente)
+    - to: estado final (en su lugar y visible)
+*/
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clase utilitaria que aplica la animación de arriba */
+.animate-slide-down {
+  animation: slideDown 0.2s ease-out forwards;
+}
