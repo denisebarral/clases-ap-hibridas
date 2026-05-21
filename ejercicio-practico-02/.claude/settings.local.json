@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-Command *)",
+      "PowerShell(where.exe pnpm 2>$null; if \\(-not $?\\) { \"pnpm not found in PATH\" })",
+      "PowerShell([System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"User\"\\) -split \";\" | Where-Object { $_ -ne \"\" })",
+      "PowerShell([System.Environment]::GetEnvironmentVariable\\(\"PNPM_HOME\", \"User\"\\))",
+      "PowerShell($env:PNPM_HOME; $env:PATH -split \";\" | Where-Object { $_ -match \"pnpm\" })"
+    ]
+  }
+}
